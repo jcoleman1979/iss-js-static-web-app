@@ -48,8 +48,7 @@ header h2 {
 }
 
 .scroll-container {
-  height: 100vh;
-  min-height: 450px;
+
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
