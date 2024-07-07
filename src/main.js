@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const scrollElements = document.querySelectorAll(".js-scroll");
 
 const elementInView = (el, dividend = 1) => {
@@ -30,10 +32,10 @@ const handleScrollAnimation = () => {
     if (elementInView(el, 1.25)) {
       displayScrollElement(el);
     } else if (elementOutofView(el)) {
-      hideScrollElement(el)
+      hideScrollElement(el);
     }
-  })
-}
+  });
+};
 
 window.addEventListener("scroll", () => { 
   handleScrollAnimation();

@@ -1,46 +1,4 @@
-<script>
-  const scrollElements = document.querySelectorAll(".js-scroll");
 
-const elementInView = (el, dividend = 1) => {
-const elementTop = el.getBoundingClientRect().top;
-
-  return (
-    elementTop <=
-    (window.innerHeight || document.documentElement.clientHeight) / dividend
-  );
-};
-
-const elementOutofView = (el) => {
-  const elementTop = el.getBoundingClientRect().top;
-
-  return (
-    elementTop > (window.innerHeight || document.documentElement.clientHeight)
-  );
-};
-
-const displayScrollElement = (element) => {
-  element.classList.add("scrolled");
-};
-
-const hideScrollElement = (element) => {
-  element.classList.remove("scrolled");
-};
-
-const handleScrollAnimation = () => {
-  scrollElements.forEach((el) => {
-    if (elementInView(el, 1.25)) {
-      displayScrollElement(el);
-    } else if (elementOutofView(el)) {
-      hideScrollElement(el)
-    }
-  })
-}
-
-window.addEventListener("scroll", () => { 
-  handleScrollAnimation();
-});
-
-</script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,11 +7,13 @@ window.addEventListener("scroll", () => {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="main.js"></script>
+
   <title>Infinite Software Solutions and Consulting</title>
 </head>
 
 <body>
+  <script src="main.js"></script>
+
   <div id="infinite-software-solutiosn-top-banner"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISS_Top_Banner.jpg" width="100%">
   </div>
   <div><p></p></div>
@@ -73,9 +33,7 @@ window.addEventListener("scroll", () => {
       </li>
   
   </div>
-  <div>
-    <div id="mainlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" width="100%"></div>
-  </div>
+
     <section class="scroll-container">
       <div class="scroll-caption js-scroll fade-in">
           <div id="mainlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" width="100%"></div>
