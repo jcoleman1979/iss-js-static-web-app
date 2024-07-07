@@ -55,6 +55,7 @@ header h2 {
   box-sizing: border-box;
 }
 
+/*
 .scroll-container:nth-of-type(1) {
   background-color: #75caa1;
 }
@@ -67,6 +68,7 @@ header h2 {
 .scroll-container:nth-of-type(4) {
   background-color: #569ff8;
 }
+*/
 
 .scroll-container:nth-of-type(even) {
   flex-direction: row-reverse;
