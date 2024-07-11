@@ -25,7 +25,13 @@ main > h1 {
   font-size: 3.5em;
 }
 
+.colimg {
+  max-width: 250px;
+}
 
+.col33 {
+  width: 33%;
+}
 
 .container {
   max-width: 1280px;
@@ -74,6 +80,7 @@ header h2 {
   flex-direction: row-reverse;
 }
 
+/*
 .scroll-element,
 .scroll-caption {
   width: 50%;
@@ -83,6 +90,7 @@ header h2 {
   min-height: 300px;
   height: 100%;
 }
+*/
 
 .scroll-caption {
   margin: 1rem;
@@ -112,6 +120,7 @@ footer a {
     align-content: inherit;
   }
 
+  /*
   .scroll-element {
     height: 100%;
   }
@@ -120,7 +129,9 @@ footer a {
   .scroll-caption {
     width: 100%;
   }
+    */
 }
+
 /**Styling scrollable elements*/
 
 .js-scroll {

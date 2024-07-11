@@ -1,0 +1,17 @@
+﻿{
+    "short_name": "Infinite Software Solutions",
+    "name": "Infinite Software Solutions Web App",
+    "description": "Infinite Software Solutions and Technology Consulting",
+    "icons": [
+        {
+            "src": "https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg",
+            "type": "image/jpg",
+            "sizes": "712x712"
+        }
+    ],
+    "start_url": "../Home",
+    "background_color": "#3367D6",
+    "display": "browser",
+    "scope": "https://infinitesoftwaresolutions.com",
+    "theme_color": "red"
+}

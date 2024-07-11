@@ -1,19 +1,74 @@
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 
-  <title>Infinite Software Solutions and Consulting</title>
+    <title>Infinite Software Solutions and Consulting</title>
+    <link rel="icon" href="https://sa502bb.blob.core.windows.net/appimages/appicons/AppIcon712.png">
+    <link rel="manifest" href="~/manifest.webmanifest.json">
+
+    <environment include="Development">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
+    </environment>
+
+    <environment exclude="Development">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
+    </environment>
+
+    <script>window.onscroll = function () { myFunction() };
+      function myFunction() {
+          var isExpanded = $(".collapse").attr("aria-expanded");
+          if (isExpanded = true) {
+              $(".collapse").collapse('hide');
+          }
+      }
+
+
+      function imgClick(eleid) {
+          var myImg = document.getElementById(eleid);
+          myImg.style.backgroundColor = "black";
+      }</script>
+
 </head>
 
-<body>
-
-  <div id="infinite-software-solutiosn-top-banner"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISS_Top_Banner.jpg" width="100%">
+<body style="background-color: black; padding: 10px 10px 10px 10px;">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+	  <div class="container-fluid ">
+		<a class="navbar-brand " href="#">
+      <img src="https://infinitess.blob.core.windows.net/iss-blob/ISS_Logo_Blue_Infinite.png" alt="Infinite Software Solutions Logo" width="80" class="d-inline-block align-text-middle">
+    </a>
+	  </div>
+	</nav>
+  <div class="container-fluid">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ms-auto justify-content-end" style="width: 33%; padding-right: 70px; padding-top: 15px;">
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+		  <ul class="navbar-nav ms-auto">
+			<li class="nav-item" style="padding-left: 20%;">
+			  <a class="nav-link active" aria-current="page" href="#">Home</a>
+			</li>
+			<li class="nav-item" style="padding-left: 20%;">
+			  <a class="nav-link" href="#">Services</a>
+			</li>			
+      <li class="nav-item" style="padding-left: 20%;">
+			  <a class="nav-link" href="#">About</a>
+			</li>			
+		  </ul>		  
+		</div>
+  </nav>
+</div>
+<div class="container-fluid" style="padding-top: 60px"></div>
+<div class"container-fluid">
+  <div id="infinite-software-solutiosn-top-banner"><img class="img-fluid" src="https://infinitess.blob.core.windows.net/iss-blob/ISS_Top_Banner.jpg" width="100%">
   </div>
   <div><p></p></div>
   <div style="color: whitesmoke; background-color: black; text-align: center;">
@@ -34,38 +89,37 @@
   </div>
 
     <section class="scroll-container">
-      <div class="scroll-caption js-scroll fade-in">
+      <div class="scroll-caption js-scroll fade-in col33">
           <div id="mainlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" width="100%"></div>
-      </div>
-      <div class="scroll-caption js-scroll fade-in">
-          This is the fade in caption.
+          <div>This is the fade in caption.</div>
       </div>
     </section>
   
     <section class="scroll-container">
-      <div class="scroll-caption js-scroll fade-in-bottom">
+      <div class="scroll-caption js-scroll fade-in-bottom col33">
           <div id="mainlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" width="100%"></div>
-       </div>
-      <div class="scroll-caption js-scroll fade-in-bottom">
-        This animation slides in to the top.
-      </div>
+          <div>This animation slides in to the top.</div>
+        </div>
     </section>
     <section class="scroll-container">
-      <div class="scroll-caption js-scroll slide-left">
+      <div class="scroll-caption js-scroll slide-left col33">
           <div id="mainlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" width="100%"></div>
-      </div>
-      <div class="scroll-caption js-scroll slide-left">
-        This animation slides in from the left.
-      </div>
+          <div>
+            This animation slides in from the left.
+          </div>
+        </div>
     </section>
     <section class="scroll-container">
-      <div class="scroll-caption js-scroll slide-right">
+      <div class="scroll-caption js-scroll slide-right col33">
           <div id="mainlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" width="100%"></div>
-      </div>
-      <div class="scroll-caption js-scroll slide-right">
-        This animation slides in from the right. 
-      </div>
+          <div>
+            This animation slides in from the right. 
+          </div>
+        </div>
     </section>
+  </div>
+
+    <br><br><br><br>
     <footer style="color: whitesmoke">
       <div id="footercontactinfo" width="100%"><p style="text-align: center;">eMail or Text to schedule a free consult:</p>
           <p><a style="color: deepskyblue" href="mailto:infinitesoftwaresolutionsllc@gmail.com?subject=Website Inquiry&body=Inquiring about a free quote or service.">Click to eMail</a></p>
@@ -73,50 +127,9 @@
       <div id="footerlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" width="25%"></div>
     </footer>
 
-    <script>
-      const scrollElements = document.querySelectorAll(".js-scroll");
-  
-    const elementInView = (el, dividend = 1) => {
-    const elementTop = el.getBoundingClientRect().top;
-  
-    return (
-      elementTop <=
-      (window.innerHeight || document.documentElement.clientHeight) / dividend
-    );
-  };
-  
-  const elementOutofView = (el) => {
-    const elementTop = el.getBoundingClientRect().top;
-  
-    return (
-      elementTop > (window.innerHeight || document.documentElement.clientHeight)
-    );
-  };
-  
-  const displayScrollElement = (element) => {
-    element.classList.add("scrolled");
-  };
-  
-  const hideScrollElement = (element) => {
-    element.classList.remove("scrolled");
-  };
-  
-  const handleScrollAnimation = () => {
-    scrollElements.forEach((el) => {
-      if (elementInView(el, 1.25)) {
-        displayScrollElement(el);
-      } else if (elementOutofView(el)) {
-        hideScrollElement(el)
-      }
-    })
-  }
-  
-  window.addEventListener("scroll", () => { 
-    handleScrollAnimation();
-  });
-  
-  </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+   
   </body>
   </html>
 
