@@ -113,6 +113,14 @@ footer a {
   color: inherit;
 }
 
+font-xs {
+  font-size: x-small;
+}
+
+font-s {
+  font-size: smaller;
+}
+
 @media screen and (max-width: 650px) {
   .scroll-container,
   .scroll-container:nth-of-type(even) {
