@@ -30,6 +30,10 @@
           }
       }
 
+      function change(id)
+      {
+        document.getElementById("web-dev-svc-desc").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+      }
 
       function imgClick(eleid) {
           var myImg = document.getElementById(eleid);
@@ -72,7 +76,7 @@
       <h2>Welcome to Infinite Software Solutions & Consulting</h2>
       <h2>SERVICES</h2>
           <li>
-            <a href="#web-dev-svc">Website Development & Design</a> 
+            <a id="Web-Dev" href="#null" onclick="change(this.id)">Website Development & Design</a> 
             <br>
             <font-xs>(HTML5, CSS, JS, Wordpress, Google Sites)</font-xs>
             <br>
@@ -81,8 +85,8 @@
             <font-s>LOGO DESIGN</font-s>
             <br>
           </li>
-          <li><a href="#web-seo-svc">GOOGLE SEO Optimization</a></li>
-          <li><a href="#web-seo-svc">Startup Business - Digital Services</a>
+          <li><a id="web-seo-svc-link" href="#web-seo-svc" onclick="change(this.id)">GOOGLE SEO Optimization</a></li>
+          <li><a href="#sb-ds-svc">Startup Business - Digital Services</a>
             <br><font-s>Legal Entity Registration</font-s>
             <br><font-s>Domain Name Regristration</font-s>
             <br><font-s>Google Business Profile Setup</font-s>
@@ -90,14 +94,14 @@
             <br><font-s>eCommerce Site Setup</font-s>
             <br>
           </li>
-          <li><a href="#web-seo-svc">Digital Media Marketing</a>
+          <li><a href="#dig-med-svc">Digital Media Marketing</a>
             <br><font-s>Google Ads</font-s>
             <br><font-s>Social Media Ads</font-s>
             <br><font-s>Yelp Ads</font-s>
             <br><font-s>Nextdoor Ads</font-s>
             <br>
           </li>
-          <li><a href="#web-seo-svc">Cloud Native Web Application Development (.NET)</a>
+          <li><a href="#web-app-svc">Cloud Native Web Application Development (.NET)</a>
             <br><font-s>Small Business Applications</font-s>
             <br><font-s>Business Process Automation</font-s>
             <br><font-s>API Integration</font-s>
@@ -107,10 +111,16 @@
           </li>
   </div>
 
-    <section class="scroll-container">
-      <div class="scroll-caption js-scroll fade-in col33">
-          <div id="mainlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" width="100%"></div>
-          <div>This is the fade in caption.</div>
+<!--Insert Padding to account for anchor link jump to top of page-->
+  <div id="navbarpadding" class="container-fluid" style="padding-top: 80px"></div>
+
+    <section id="web-dev-svc-desc" class="scroll-container">
+      <div><a href="#">Back to Top</a></div>
+      <div><h1>Website Development & Design</h1></div><br>
+      <div class="scroll-caption js-scroll fade-in">
+          <div id="mainlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" style="max-width: 250px;"></div>
+          <div>Our Website Design & Development services offer end-to-end solutions to establish and enhance your online presence. We specialize in New Site Development, comprehensive Website Re-Writes, and provide flexible options including Managed Solutions or Build and Hand Off. Whether starting from scratch or revamping an existing site, our expertise ensures a professional, engaging, and functional web presence tailored to your needs.
+          </div>
       </div>
     </section>
   
