@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles.css">
 
     <title>Infinite Software Solutions and Consulting</title>
@@ -22,7 +23,8 @@
       <link rel="stylesheet" href="styles.css">
     </environment>
 
-    <script>window.onscroll = function () { myFunction() };
+    <script>
+    window.onscroll = function () { myFunction() };
       function myFunction() {
           var isExpanded = $(".collapse").attr("aria-expanded");
           if (isExpanded = true) {
@@ -30,7 +32,7 @@
           }
       }
 
-      function change(id)
+      function jumpto(id)
       {
         document.getElementById(id).scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
       }
@@ -38,12 +40,15 @@
       function imgClick(eleid) {
           var myImg = document.getElementById(eleid);
           myImg.style.backgroundColor = "black";
-      }</script>
+      }
+    </script>
+
 
 </head>
 
 <body>
   
+
   <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: black;">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISS_Logo_Blue_Infinite.png" alt="Infinite Software Solutions Logo" width="80" class="d-inline-block align-text-right"></a>
@@ -53,13 +58,7 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -68,15 +67,18 @@
 
 
 <div id="navbarpadding" class="container-fluid" style="padding-top: 60px"></div>
-<div id="mainbodysection" class"container-fluid">
-  <div id="infinite-software-solutiosn-top-banner"><img class="img-fluid" src="https://infinitess.blob.core.windows.net/iss-blob/iss_bg.png" width="100%" style="filter: brightness(90%)">
+
+
+<div id="mainbodysection">
+  <div id="infinite-software-solutiosn-top-banner">
+    <img class="img-fluid" src="https://infinitess.blob.core.windows.net/iss-blob/iss_bg_15pct.png" width="100%" style="filter: brightness(90%)">
   </div>
   <div><p></p></div>
-  <div class="container-fluid">
-      <h2>Welcome to Infinite Software Solutions & Consulting</h2>
-      <h2>SERVICES</h2>
+  <div class="container-sm">
+    <br>
+      <h4>Specializing in the following Services:</h4>
           <li>
-            <a id="Web-Dev" href="#null" onclick="change('web-dev-svc-desc')">Website Development & Design</a> 
+            <a id="Web-Dev" href="#null" onclick="jumpto('web-dev-svc-desc')">Website Development & Design</a> 
             <br>
             <font-xs>(HTML5, CSS, JS, Wordpress, Google Sites)</font-xs>
             <br>
@@ -85,8 +87,10 @@
             <font-s>LOGO DESIGN</font-s>
             <br>
           </li>
-          <li><a href="#null" onclick="change('web-seo-svc-desc')">Google SEO Optimization</a></li>
-          <li><a href="#null" onclick="change('sb-ds-svc-desc')">Startup Business - Digital Services</a>
+          <br>
+          <li><a href="#null" onclick="jumpto('web-seo-svc-desc')">Google SEO Optimization</a></li>
+          <br>
+          <li><a href="#null" onclick="jumpto('sb-ds-svc-desc')">Startup Business - Digital Services</a>
             <br><font-s>Legal Entity Registration</font-s>
             <br><font-s>Domain Name Regristration</font-s>
             <br><font-s>Google Business Profile Setup</font-s>
@@ -94,14 +98,16 @@
             <br><font-s>eCommerce Site Setup</font-s>
             <br>
           </li>
-          <li><a href="#null" onclick="change('dig-med-svc-desc')">Digital Media Marketing</a>
+          <br>
+          <li><a href="#null" onclick="jumpto('dig-med-svc-desc')">Digital Media Marketing</a>
             <br><font-s>Google Ads</font-s>
             <br><font-s>Social Media Ads</font-s>
             <br><font-s>Yelp Ads</font-s>
             <br><font-s>Nextdoor Ads</font-s>
             <br>
           </li>
-          <li><a href="#null" onclick="change('web-app-svc-desc')">Cloud Native Web Application Development (.NET)</a>
+          <br>
+          <li><a href="#null" onclick="jumpto('web-app-svc-desc')">Cloud Native Web Application Development (.NET)</a>
             <br><font-s>Small Business Applications</font-s>
             <br><font-s>Business Process Automation</font-s>
             <br><font-s>API Integration</font-s>
@@ -109,71 +115,137 @@
             <br><font-xs>Azure: SQL Database, MySQL, PostgreSQL, Cosmos, MongoDb</font-xs>
             <br>
           </li>
+          <br>
   </div>
 
-<!--Insert Padding to account for anchor link jump to top of page-->
-  <div id="navbarpadding" class="container-fluid" style="padding-top: 80px"></div>
-
-    <section  class="scroll-container">
-      <div id="web-dev-svc-desc"><a href="#">Back to Top</a></div>
-      <div><h3>Website Development & Design</h3></div><br>
-      <div class="scroll-caption js-scroll fade-in">
+  <div class="container-fluid" style="height: 60px"></div>
+  <hr>
+    <section  class="container-sm">
+      <div id="web-dev-svc-desc"><a href="#">Back to Top</a><br></div>
+      <div><h4>Website Development & Design</h4></div><br>
+      <div class="scroll-caption js-scroll fade-in-bottom">
           <div id="mainlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" style="max-width: 250px;"></div>
           <div>Our Website Design & Development services offer end-to-end solutions to establish and enhance your online presence. We specialize in New Site Development, comprehensive Website Re-Writes, and provide flexible options including Managed Solutions or Build and Hand Off. Whether starting from scratch or revamping an existing site, our expertise ensures a professional, engaging, and functional web presence tailored to your needs.
           </div>
       </div>
     </section>
-  
-    <section class="scroll-container">
-      <div id="web-seo-svc-desc"><a href="#">Back to Top</a></div>
-      <div><h3>Google SEO Optimization</h3></div><br>
+    <div class="container-fluid" style="height: 60px"></div>
+    <hr>
+    <section class="container-sm">
+      <div id="web-seo-svc-desc"><a href="#">Back to Top</a><br></div>
+      <div><h4>Google SEO Optimization</h4></div><br>
       <div class="scroll-caption js-scroll fade-in-bottom">
           <div id="mainlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" style="max-width: 250px;""></div>
-          <div>This animation slides in to the top.</div>
-        </div>
+          <div><p>Enhance your online visibility and attract more customers with our specialized SEO consulting services for small businesses. Our comprehensive offerings include:
+            <br><br>
+            <strong>SEO Audit and Analysis:</strong><br>
+               - We conduct a thorough audit of your website to identify strengths, weaknesses, and opportunities for improvement in search engine rankings.
+            <br><br>
+            <strong>Keyword Research and Strategy:</strong><br>
+               - Our team performs in-depth keyword research to determine the most effective keywords and phrases that will drive targeted traffic to your site.
+            <br><br>
+            <strong>On-Page Optimization:</strong><br>
+               - We optimize your website’s content, meta tags, URLs, and internal linking structure to improve search engine visibility and relevance.
+            <br><br>
+            <strong>Technical SEO:</strong><br>
+               - We address technical aspects such as site speed, mobile-friendliness, crawlability, and indexability to ensure your site meets search engine standards.
+            <br><br>
+            <strong>Content Development and Optimization:</strong><br>
+               - We help create high-quality, SEO-friendly content that engages your audience and boosts your rankings for targeted keywords.
+            <br><br>
+            <strong>Link Building and Off-Page SEO:</strong><br>
+               - Our strategies include building high-quality backlinks and enhancing your online reputation to increase your site’s authority and ranking.
+            <br><br>
+            <strong>Local SEO:</strong><br>
+               - We optimize your online presence for local search, helping you attract customers in your area through local listings, reviews, and localized content.
+            <br><br>
+            <strong>Performance Monitoring and Reporting:</strong><br>
+               - Track your SEO progress with regular reports and insights, allowing you to measure the impact and adjust strategies as needed.
+            <br><br>
+            Boost your website’s search engine rankings and drive more organic traffic with our expert SEO consulting services. Contact us today to learn how we can help your small business grow!</div>
+          </p>
+          </div>
     </section>
-    <section class="scroll-container">
-      <div id="sb-ds-svc-desc"><a href="#">Back to Top</a></div>
-      <div><h3>Startup Business - Digital Services</h3></div><br>
-      <div class="scroll-caption js-scroll slide-left">
+    <div class="container-fluid" style="height: 60px"></div>
+    <hr>
+    <section class="container-sm">
+      <div id="sb-ds-svc-desc"><a href="#">Back to Top</a><br></div>
+      <div><h4>Startup Business - Digital Services</h4></div><br>
+      <div class="scroll-caption js-scroll fade-in-bottom">
           <div id="mainlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" style="max-width: 250px;""></div>
           <div>
-            This animation slides in from the left.
+            <p>
+              Our New Business Startup services provide comprehensive support to help you launch successfully. We offer Online Legal Entity Registration to ensure your business is properly established. We integrate Social Media to boost your online presence and handle Google Business Profile Setup for increased local visibility. Our Domain Registration services secure your unique web address, while our Website Design & Development team creates a professional and engaging site tailored to your needs.
+            </p>
+      </div>
+        </div>
+    </section>
+    <div class="container-fluid" style="height: 60px"></div>
+    <hr>
+    <section class="container-sm">
+      <div id="dig-med-svc-desc"><a href="#">Back to Top</a><br></div>
+      <div><h4>Digital Media Marketing</h4></div><br>
+      <div class="scroll-caption js-scroll fade-in-bottom">
+          <div id="mainlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" style="max-width: 250px;""></div>
+          <div>
+            <p>
+              Maximize your online advertising impact with our expert Google Ads consulting services, specifically designed for small businesses. 
+              <br><br>
+              <strong>Campaign Strategy Development:</strong><br>
+                - We create tailored Google Ads strategies that align with your business objectives, target audience, and budget.
+              <br><br>
+              <strong>Keyword Research:</strong><br>
+                - Our team conducts thorough keyword research to identify the most effective terms that will drive relevant traffic to your website.
+              <br><br>
+              <strong>Ad Creation and Design:</strong><br>
+                - We craft visually appealing ads to capture your audience's attention and drive conversions.
+              <br><br>
+              <strong>Account Setup and Management:</strong><br>
+                - We handle the complete setup and ongoing management of your Google Ads account, ensuring optimal performance and budget allocation.
+              <br><br>
+              <strong>Performance Tracking and Reporting:</strong><br>
+                - Monitor the success of your campaigns with detailed performance reports and insights, allowing you to make informed decisions and adjustments.
+              <br><br>
+              Boost your online presence and achieve your business goals with our comprehensive Google Ads consulting services. Contact us today to get started!
+              </p>  
           </div>
         </div>
     </section>
-    <section class="scroll-container">
-      <div id="dig-med-svc-desc"><a href="#">Back to Top</a></div>
-      <div><h3>Digital Media Marketing</h3></div><br>
-      <div class="scroll-caption js-scroll slide-right col33">
-          <div id="mainlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" style="max-width: 250px;""></div>
-          <div>
-            This animation slides in from the right. 
-          </div>
-        </div>
-    </section>
-    <section  class="scroll-container">
-      <div id="web-app-svc-desc"><a href="#">Back to Top</a></div>
-      <div><h3>Cloud Native Web Application Development</h3></div><br>
+    <div class="container-fluid" style="height: 60px"></div>
+    <hr>
+    <section  class="container-sm">
+      <div id="web-app-svc-desc"><a href="#">Back to Top</a><br></div>
+      <div><h4>Cloud Native Web App Development</h4></div><br>
       <div class="scroll-caption js-scroll fade-in">
           <div id="mainlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" style="max-width: 250px;"></div>
-          <div>Our Website Design & Development services offer end-to-end solutions to establish and enhance your online presence. We specialize in New Site Development, comprehensive Website Re-Writes, and provide flexible options including Managed Solutions or Build and Hand Off. Whether starting from scratch or revamping an existing site, our expertise ensures a professional, engaging, and functional web presence tailored to your needs.
+          <div>
+          <p>
+            <h4>Microst Azure Web App Development</h4>
+            Our Microsoft Azure Web App Development services offer comprehensive solutions for your web application needs. We provide Full Stack Development and specialize in Cloud Native Web App Development to leverage the full potential of Azure. Our services include Existing Application Modernizations to enhance performance and functionality, as well as API Integrations to ensure seamless connectivity and interoperability within your systems.
+          </p>
           </div>
       </div>
     </section>
+    <div class="container-fluid" style="height: 60px"></div>
   </div>
 
-    <br><br><br><br>
-    <footer style="color: whitesmoke">
-      <div id="footercontactinfo" width="100%"><p style="text-align: center;">eMail or Text to schedule a free consult:</p>
-          <p><a style="color: deepskyblue" href="mailto:infinitesoftwaresolutionsllc@gmail.com?subject=Website Inquiry&body=Inquiring about a free quote or service.">Click to eMail</a></p>
-      <p style="text-align: center;">Text to contact:  502-727-7286</p></div>
-      <div id="footerlogo"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISSLogoTrimmed.jpg" width="25%"></div>
-    </footer>
+  <div class="container-fluid" style="height: 60px"></div>
 
+<footer>
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-bottom" style="background-color: black;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="https://infinitess.blob.core.windows.net/iss-blob/ISS_Logo_Blue_Infinite.png" alt="Infinite Software Solutions Logo" style="max-width: 80px;"></a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" style="color: deepskyblue" href="mailto:info@infinitesoftwaresolutions.com?subject=Website Inquiry&body=Inquiring about a free quote or service.">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-   
+
   </body>
   </html>
 
