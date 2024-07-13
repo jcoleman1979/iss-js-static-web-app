@@ -13,7 +13,7 @@ html, body {
   padding: 0;
   padding-top: 60px;
   background-color: #020B2E;
-  padding: 10px 10px 10px 10px;
+  padding: 0px 0px 0px 0px;
   color: whitesmoke;
   text-align: center;
   font-size: medium;
@@ -29,6 +29,7 @@ main > h1 {
   text-align: center;
   font-size: 3.5em;
 }
+
 
 .colimg {
   max-width: 250px;
@@ -105,6 +106,10 @@ strong {
   font-weight: bolder;
 }
 
+row {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 @media screen and (max-width: 650px) {
   .scroll-container,
