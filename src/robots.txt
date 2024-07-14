@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://infinitesoftwaresolutions.com/sitemap.xml
+Sitemap: https://www.infinitesoftwaresolutions.com/sitemap.xml
