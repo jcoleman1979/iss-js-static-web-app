@@ -106,8 +106,23 @@ strong {
   font-weight: 800;
 }
 
-nav-link-css {
+a{
   color: deepskyblue;
+  text-decoration:none;
+}
+
+
+a:hover {
+ color: white;
+ text-decoration: underline;
+}
+
+nav {
+  background-color: black;
+}
+
+.article-content {
+  text-align: center;
 }
 
 row {
